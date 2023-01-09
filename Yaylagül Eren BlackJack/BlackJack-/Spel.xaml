@@ -1,0 +1,36 @@
+﻿<Window x:Class="BlackJack_.Spel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJack_"
+        mc:Ignorable="d"
+        Title="Spel" Height="450" Width="800">
+    <Viewbox>
+    <Grid Width="753">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/poker-table-background-green-color_47243-1068.png"/>
+        </Grid.Background>
+        <!--<Button x:Name="btnHit" Content="Hit" HorizontalAlignment="Left" Margin="40,377,0,0" VerticalAlignment="Top" Height="34" Width="107" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="20"/>
+        <Button x:Name="btnStand" Content="Stand" HorizontalAlignment="Left" Height="34" Margin="166,377,0,0" VerticalAlignment="Top" Width="96" Background="{x:Null}" Foreground="#FFF1F1F1" BorderBrush="{x:Null}" FontSize="20"/>
+        <Button x:Name="btnDeel" Content="Deel" HorizontalAlignment="Left" Height="34" Margin="300,377,0,0" VerticalAlignment="Top" Width="100" Background="{x:Null}" FontSize="20" BorderBrush="{x:Null}" Foreground="White"/>-->
+        <Label Content="Speler" HorizontalAlignment="Left" Height="49" Margin="40,27,0,0" VerticalAlignment="Top" Width="107" Foreground="White" FontSize="18"/>
+        <Label Content="Bank" Margin="569,37,32,336" FontSize="18" Foreground="White"/>
+        <Button IsEnabled="False" Name="DeelButton" Content="Deel" HorizontalAlignment="Left" Height="81" Margin="300,27,0,0" VerticalAlignment="Top" Width="170" Click="DeelButton_Click"/>
+        <Button IsEnabled="False" Name="HitButton" Content="Hit" HorizontalAlignment="Left" Height="81" Margin="300,131,0,0" VerticalAlignment="Top" Width="170" Click="HitButton_Click"/>
+        <Button IsEnabled="False" Name="StandButton" Content="Stand" HorizontalAlignment="Left" Height="81" Margin="300,254,0,0" VerticalAlignment="Top" Width="170" Click="StandButton_Click"/>
+        <TextBox Name="SpelerTxtBox" HorizontalAlignment="Left" Height="158" Margin="70,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="180"/>
+        <TextBox Name="BankTxtBox" HorizontalAlignment="Left" Height="158" Margin="538,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="180"/>
+        <Label Name="SpelerLbl" FontSize="40" Content="0" HorizontalAlignment="Left"  Height="57" Margin="40,354,0,0" VerticalAlignment="Top" Width="147" Foreground="White"/>
+        <Label Name="BankLbl" FontSize="40" Content="0" HorizontalAlignment="Left" Height="56" Margin="538,354,0,0" VerticalAlignment="Top" Width="147" Foreground="#FFFCFCFC"/>
+        <Label Name="UitslagLbl" Content="" FontSize="30" HorizontalAlignment="Left" Height="57" Margin="291,354,0,0" VerticalAlignment="Top" Width="206"/>
+        <Button Name="NieuwBtn" Content="Nieuw Spel" HorizontalAlignment="Left" Height="40" Margin="189,36,0,0" VerticalAlignment="Top" Width="79" Click="NieuwBtn_Click"/>
+        <Slider Name="InzetSlider" Minimum="1" Maximum="10" HorizontalAlignment="Left" Height="23" Margin="29,98,0,0" VerticalAlignment="Top" Width="209"/>
+        <Label Name="BudgetLbl" Content="" HorizontalAlignment="Left" Margin="170,349,0,0" VerticalAlignment="Top" Height="61" Width="116" Foreground="White" FontSize="14"/>
+        <Label Name="InzetLbl" Content="" HorizontalAlignment="Left" Margin="170,306,0,0" VerticalAlignment="Top" Height="31" Width="104" Foreground="White" FontSize="14"/>
+        <Label Content="Inzet" HorizontalAlignment="Left" Height="29" Margin="107,307,0,0" VerticalAlignment="Top" Width="59" FontSize="14" Background="{x:Null}" Foreground="White"/>
+        <Label Content="Budget" HorizontalAlignment="Left" Height="28" Margin="102,349,0,0" VerticalAlignment="Top" Width="58" FontSize="14" Foreground="White" Background="{x:Null}"/>
+    </Grid>
+    </Viewbox>
+</Window>

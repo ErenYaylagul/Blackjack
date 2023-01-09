@@ -1,0 +1,22 @@
+﻿<Window x:Class="BlackJack_.Regels"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJack_"
+        mc:Ignorable="d"
+        Title="Regels" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/poker-table-background-green-color_47243-1068.png"/>
+        </Grid.Background>
+        <Label x:Name="lblRegelsTekst" Margin="44,0,44,0" VerticalAlignment="Center" Foreground="White" FontSize="16" Height="202" Width="712" Content="Ieder speler heeft een budget van 100 Euro. &#xD;&#xA;Zet minimum 10% van je budget in om te kunnen beginnen. &#xD;&#xA;Begin de spel door op Delen te klikken. Als je op HIT klikt krijg je 1 kaart extra.&#xD;&#xA;Door op stand te klikken behoud je je positie.&#xD;&#xA;Als iemand bust, dan verliest die zijn of haar inzet.&#xD;&#xA;Als degene dichter bij 21 zat dan de andere, dan wint de degene en krijg je het dubbel van je inzet.&#xD;&#xA;Als de speler en de bank evenveel hebben (push), dan is het gelijkspel.&#xD;&#xA;De speler krijgt dan zijn of haar inzet terug."/>
+        <Label x:Name="lblTitel" Content="Regels" HorizontalAlignment="Center" Margin="0,42,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btnTerug" Content="" HorizontalAlignment="Left" Margin="78,42,0,0" VerticalAlignment="Top" Width="67" Height="37" Click="btnTerug_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.222,0.418">
+            <Button.Background>
+                <ImageBrush ImageSource="/png-clipart-computer-icons-arrow-back-angle-hand.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
